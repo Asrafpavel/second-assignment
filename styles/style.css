@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --black:#131313; 
+    --gray:#727272;
+    --brown:#FF900E;
+    --deep-gray:#424242; 
+
+}
+.btn-primary{
+    background-color: var(--brown);
+    border: none;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #FFF;
+}
+
+/* header styles  */
+
+header{
+    background-color: #fff4e7ff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 170px;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    flex-shrink: 0;
+    gap: 30px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--deep-gray);
+    font-size: 20px;
+}
+.nav-title{
+    font-size: 45px;
+    font-weight: 700;
+    flex-shrink: 0;
+    color: var(--black);
+    
+}
+
+.banner{
+    margin-top: 50px;
+}
+.banner-intro{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--black);
+}
+.banner-desc{
+    color: var(--gray);
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.banner-image{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.banner-image > img{
+    width: 70%;
+    margin-bottom: 40px;
+   
+}
+
+/* --------- team section --------- */
+.team-section{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 80px;
+    
+    
+    
+}
+.team-member{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    place-items: center;
+    gap: 15px;
+    
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+}
+.team-intro{
+    flex-shrink: 0;
+    width:50%;
+}
+.team-title{
+    font-size: 45px;
+    color: var(--black);
+}
+.quick{
+    color: var(--gray);
+    font-weight: 600;
+}
+.feature{
+    color: var(--brown);
+}
+.team-desc{
+    font-size: 16px;
+    color: var(--gray);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
