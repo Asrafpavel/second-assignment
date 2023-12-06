@@ -19,7 +19,9 @@
     font-size: 18px;
     color: #FFF;
 }
-
+.hide{
+    /* visibility: hidden; */
+}
 /* header styles  */
 
 header{
@@ -126,6 +128,100 @@ nav > ul > li > a{
     color: var(--gray);
     margin-top: 30px;
     margin-bottom: 25px;
+}
+
+/* introduce section  */
+.introduce-section{
+    margin-top: 100px;
+
+ 
+}
+.introduce-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.introduce{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.left{
+
+    color: var(--deep-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin-right: 55px;
+}
+.front , .back{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.front{
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+
+}
+.front:hover{
+    transform: scale(.9);
+}
+
+.front h2 ,p{
+    margin-top: 20px;
+}
+.front button{
+    margin-top: 30px;
+    padding: 18px 35px ;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 1s;
+    background-color: lightslategray;
+    color: white;
+}
+.front button:hover{
+    background-color: var(--brown);
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.back{
+    background-color: lightcoral;
+    transition: 1s;
+}
+.back:hover{
+    transform: scale(.9);
+}
+
+.back h3{
+    margin-top: 10px;
+}
+.back p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.fee-bg{
+    font-weight: 700;
+    color: var(--deep-gray);
+    border-radius: 20px;
+
+}
+.back > img {
+    width: 80%;
+    height: 50%;
+
 }
 
 /* experience-section */
@@ -267,6 +363,7 @@ nav > ul > li > a{
     border: 1px solid ;
     transform: scale(1.07) translate(15px,-15px);
     transition: .8s linear;
+    border-radius: 25px;
 }
 
 
