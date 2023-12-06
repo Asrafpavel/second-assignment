@@ -149,7 +149,6 @@ nav > ul > li > a{
 
 }
 .left{
-
     color: var(--deep-gray);
     display: flex;
     align-items: center;
@@ -406,4 +405,65 @@ footer{
     color: var(--deep-gray);
     border-radius: 8px;
 
+}
+
+@media only screen and (max-width:576px) {
+    .banner-intro , .banner-image>img{
+        width: 90%;
+    }
+    .team-section{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .team-member{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-intro{
+        width: 100%;
+    }
+    .introduce{
+        justify-content: center;
+    }
+    .left{
+        font-size: 28px;
+        margin: 0;
+    }
+    .front , .back {
+        width: 400px;
+    }
+    .experience-section{
+        flex-direction: column;
+        padding: 0;
+    }
+    .exp-items{
+        width: 90%;
+    }
+    .exp-title{
+        font-size: 28px;
+    }
+    .exp-img{
+        width: 90%;
+        
+    }
+    .exp-btn{
+        left: 0;
+    }
+    .fact-intro{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .fact-items , .sponser{
+        margin-top: 50px;
+    }
+    .fact-items{
+        gap: 30px;
+    }
+    .items , .sponser-intro{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sponser-items{
+        gap: 35px;
+    }
 }
